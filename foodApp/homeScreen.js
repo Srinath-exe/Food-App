@@ -166,7 +166,7 @@ export default HomeScreen = ({navigation}) => {
                 <View>
                     {popularData.map((item)=>(
                         <BouncyView 
-                            delay={60} // Animation delay in miliseconds
+                            delay={20} // Animation delay in miliseconds
                             scale={0.9} // Max scale of animation
                             onPress={()=>navigation.navigate('Details',{item:item})}
                         key={item.key}>
